@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    user-select: none;
+    
+} 
+/* typography */
+.head-font{   
+    font-family: 'Righteous', sans-serif;
+}
+.subhead-font{
+    font-family: 'Caveat', cursive;
+}
+
+/* layout */
+#container{
+     
+    margin:0 auto;
+    border:2px solid black;
+}
+#main-head{
+    height:300px;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.5),rgba(0,0,0,0.8)),url(images/headerImg.jpg);
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.title-head{
+    margin:0px;
+    color:white;
+}
+
+#food-items{
+    margin:0 auto;
+    
+}
+.item{
+    display:flex;
+    justify-content:space-between;
+    margin:10px 20px;
+    border:1px solid black;
+    border-radius:5px;
+    padding:20px;
+    /* flex-wrap:wrap; */
+}
+
+.item-content{
+    display:flex;
+    gap:30px;
+    align-items: center;
+}
+.item-title{
+    font-family: 'Raleway', sans-serif;  
+    font-size:16px;
+    font-weight:bolder;
+}  
+.item-ingredients{
+    font-family: 'Caveat', cursive;
+}  
+.item-price{
+    font-family: 'Source Code Pro', monospace;
+}
+img{
+    width:200px;
+}
+.btn{
+    margin:auto 0;
+    border:1px solid green;
+    background-color: white;
+    color:green;
+    font-family: 'Source Code Pro', monospace;
+    cursor:pointer;
+}
+.btn:hover,.btn:focus{
+    color:white;
+    background-color: green;
+}
+h3{
+    text-align:center;
+}
+.add-item{
+    display: flex;
+    justify-content: space-between;
+    margin:0 20px;
+}
+form{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
+form input{
+    padding:10px;
+
+}
+form button{
+    padding:10px;
+    border-radius: 3.89px;
+    background: #16DB99;
+    border:none;
+    cursor:pointer;
+    color:white;
+}
+
+
+/* buttons */
+.remove-btn{
+    border:none;
+    color:red;
+    background:white;
+    display:inline;
+    cursor:pointer;
+}
+.remove-btn:hover{
+    color:rgba(255, 0, 0, 0.724)
+}
+
+#place-order-btn{
+    display:block;
+    margin:0 auto 20px auto;
+    padding:5px 20px;
+    background-color:white;
+    color:#16DB99;
+    border:2px solid #16DB99;
+    cursor:pointer;
+}
+#place-order-btn:hover,#place-order-btn:focus{
+    color:white;
+    background-color:#16DB99;
+}
+.add-item-details{
+    display:flex;
+}
+#order-section{
+    display:none;
+    font-family: 'Righteous', sans-serif;
+    font-weight: lighter;
+}
+
+#total-price{
+    border-top:1px solid grey;
+    display:flex;
+    justify-content: space-between;
+    margin:0 20px;
+}
+#payment{
+    padding:20px;
+    border:1px solid black; 
+    box-shadow: 1px 1px 10px black;
+    border-radius:10px;
+    max-width:500px;
+    height: 300px;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    background-color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    display:none;
+}
+
+#payment-close-btn{
+    text-align: right;
+    color:grey;
+    padding:2px;
+    text-align: right;
+    margin:0;
+}
+
+#payment-close-btn:hover{
+    color:red;
+    cursor:pointer;
+}
+#thanks-message{
+    display:none;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border:1px solid  #16DB99;
+    color: #16DB99;
+    font-weight:bolder;
+    padding:10px;
+    margin: 10px;
+}
